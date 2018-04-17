@@ -74,7 +74,7 @@ def rnn_forward(x, a0, parameters):
     a = np.zeros((n_a, m, T_x))
     y_pred = np.zeros((n_y, m, T_x))
 
-    # 用a0初始化a_next
+    # 用a0初始化a_prev
     a_prev = a0
 
     # 当 T_x = 0 时
